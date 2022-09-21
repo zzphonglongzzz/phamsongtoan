@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes snowflakes-fall {
+  0% {
+    top: -10%
+  }
+
+  100% {
+    top: 100%
+  }
+}
+
+@-webkit-keyframes snowflakes-shake {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+  }
+
+  50% {
+    -webkit-transform: translateX(80px);
+    transform: translateX(80px)
+  }
+}
+
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%
+  }
+
+  100% {
+    top: 100%
+  }
+}
+
+@keyframes snowflakes-shake {
+
+  0%,
+  100% {
+    transform: translateX(0)
+  }
+
+  50% {
+    transform: translateX(80px)
+  }
+}
+
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+  -webkit-animation-duration: 10s, 3s;
+  -webkit-animation-timing-function: linear, ease-in-out;
+  -webkit-animation-iteration-count: infinite, infinite;
+  -webkit-animation-play-state: running, running;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+  left: 10%;
+  -webkit-animation-delay: 1s, 1s;
+  animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  -webkit-animation-delay: 6s, .5s;
+  animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  -webkit-animation-delay: 4s, 2s;
+  animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  -webkit-animation-delay: 2s, 2s;
+  animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  -webkit-animation-delay: 8s, 3s;
+  animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  -webkit-animation-delay: 6s, 2s;
+  animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  -webkit-animation-delay: 2.5s, 1s;
+  animation-delay: 2.5s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  -webkit-animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  -webkit-animation-delay: 3s, 1.5s;
+  animation-delay: 3s, 1.5s
+}
+
+.snowflake:nth-of-type(10) {
+  left: 25%;
+  -webkit-animation-delay: 2s, 0s;
+  animation-delay: 2s, 0s
+}
+
+.snowflake:nth-of-type(11) {
+  left: 65%;
+  -webkit-animation-delay: 4s, 2.5s;
+  animation-delay: 4s, 2.5s
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#page1 {
+  width: 100%;
+  height: 760px;
+  position: relative;
+}
+
+.button1 a{
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button1 {
+  display: flex;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  position: absolute;
+  background-color: rgba(136, 136, 136, 0.2);
+  color: black;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  opacity: 0.3;
+}
+
+.button1:hover{
+  opacity: 1;
+}
+
+
+.Img_In_page1 {
+  height: 100%;
+  width: 100%;
+}
+
+#page2 {
+  height: 760px;
+  padding: 30px;
+  position: relative;
+  background-image: linear-gradient(0, rgba(255,255,255, 0.5), rgb(173,216,230, 0.5)),
+  url(/HappyBirthday/Image/—Pngtree—colorful\ confetti\ png\ isolated\ on_6991366.png),
+  url(/HappyBirthday/Image/—Pngtree—party\ colorful\ decorative\ bunting_7513662.png);
+}
+
+.button2 {
+  display: flex;
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  position: absolute;
+  background-color: rgba(136, 136, 136, 0.2);
+  color: black;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  opacity: 0.3;
+}
+
+.button2 a{
+  height: 100%;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.button2:hover{
+  opacity: 1;
+}
+
+.header {
+  display: block;
+  margin: 20px;
+  color: crimson;
+  font-size: 40px;
+  text-align: center;
+}
+
+.content {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.slideShow {
+  height: 600px;
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5%;
+  box-shadow: 5px 10px #888888;
+}
+
+.text {
+  height: 600px;
+  width: 40%;
+}
+
+.content .slideShow .image {
+  height: 80%;
+  width: 80%;
+  margin: 50px auto;
+  overflow: hidden;
+  /* background-size: contain; */
+}
+
+.image img{
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  animation: slide 14s ease infinite;
+}
+
+.slideShow{
+  overflow: hidden;
+}
+
+
+
+.slide {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+.text .ContentInText{
+  font-size: 20px;
+  margin-top: 60%;
+  height: 50%;
+  width: 100%;
+  border-radius: 10px;
+  list-style-type: none;
+  line-height: 50px;
+}
+
+.ContentInText li{
+  border-bottom: 2px solid #333;
+}
+
+@keyframes slide {
+  20% {margin-left: -100%}
+  40% {margin-left: -200%}
+  60% {margin-left: -300%}
+  80% {margin-left: -400%}
+}
+
