@@ -196,8 +196,8 @@ body{
   padding: 30px;
   position: relative;
   background-image: linear-gradient(0, rgba(255,255,255, 0.5), rgb(173,216,230, 0.5)),
-  url(/HappyBirthday/Image/—Pngtree—colorful\ confetti\ png\ isolated\ on_6991366.png),
-  url(/HappyBirthday/Image/—Pngtree—party\ colorful\ decorative\ bunting_7513662.png);
+  url(../Image//party.png),
+  url(../Image/colorful.png);
 }
 
 .button2 {
